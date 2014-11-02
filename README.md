@@ -1,5 +1,7 @@
-Project_Mathison
-=================
+#Project_Mathison
 
-Stay Tuned. Currently in devolupment.
+This is a data science project focused on the NLP domain.
 
+Stay Tuned for further details, as this project is currently in development.
+
+ETA = Mid-December 2014
