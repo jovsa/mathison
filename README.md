@@ -1,4 +1,5 @@
-SwiftKey_Capstone
+Project_Mathison
 =================
 
-Capstone project to explore NLP algorithms Swiftkey style
+Stay Tuned. Currently in Devolupment.
+
