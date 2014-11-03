@@ -6,3 +6,5 @@
 
 The data is from a corpus called [HC Corpora](www.corpora.heliohost.org). See the [readme file](http://www.corpora.heliohost.org/aboutcorpus.html) for details on the corpora available. The files have been language filtered but may still contain some foreign text.
 
+The data files are not included in this repository as they exceed GitHub file size limits.
+
