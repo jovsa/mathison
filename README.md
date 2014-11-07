@@ -1,6 +1,6 @@
 #Project_Mathison
 
-This is a data science project focused in the NLP domain.
+This is a data science project in the NLP domain.
 
 Stay Tuned for further details, as this project is currently in development.
 
