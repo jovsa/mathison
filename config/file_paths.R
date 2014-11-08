@@ -1,0 +1,2 @@
+# File Paths
+dataLoc <- "./data"
