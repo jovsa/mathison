@@ -50,12 +50,12 @@ docs <- tm_map(docs, removeWords, profanityFilter)
 # Removing whitespaces
 docs <- tm_map(docs, stripWhitespace)
 
-save(docs,file = "./docs_unstemmed.RData")
+save(docs,file = "./cache/docs_unstemmed.RData")
 
 # Stemming documents
 docs <- tm_map(docs, stemDocument)
 
-save(docs,file = "./docs_stemmed.RData")
+save(docs,file = "./cache/docs_stemmed.RData")
 
 #DTM
 #blogsDTM <- DocumentTermMatrix(VCorpus(VectorSource(docs[[1]]$content)))
