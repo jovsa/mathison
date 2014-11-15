@@ -18,4 +18,12 @@ colnames(news)[1] <- "news_data"
 twitter <- data.frame(docs[[3]]$content, stringsAsFactors = FALSE)
 colnames(twitter)[1] <- "twitter_data" 
 
-inTrain_blogs <- createDataPartition(y=blogs$blog_data, p=0.6, list=FALSE)
+
+docs <- NULL
+
+source("./helpers/data_seperator.R")
+
+# Splitting Blogs
+blogs$Type <- data_seperator()
+news$Type <- data_seperator()
+twitter$Type <- data_seperator()
