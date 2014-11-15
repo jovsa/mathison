@@ -3,6 +3,6 @@ data/en_US/
 data/fi_FI/
 data/ru_RU/
 .Rhistory
-.RData
 *.txt
 *.csv
+*.RData
