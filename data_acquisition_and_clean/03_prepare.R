@@ -45,17 +45,17 @@ CV_twitter <- twitter[which(twitter$Type=="CV"),]
 test_blogs$Type <- NULL
 train_blogs$Type <- NULL
 CV_blogs$Type <- NULL
-#blogs <- NULL
+blogs <- NULL
 
 test_news$Type <- NULL
 train_news$Type <- NULL
 CV_news$Type <- NULL
-#news <- NULL
+news <- NULL
 
 test_twitter$Type <- NULL
 train_twitter$Type <- NULL
 CV_twitter$Type <- NULL
-#twitter <- NULL
+twitter <- NULL
 
 
 # Saving data
