@@ -1,0 +1,20 @@
+---
+output:
+  html_document: 
+    theme: spacelab  
+    highlight: tango
+---
+
+<center> <h1>Milestone Report: En Route to a Text Prediction Algorithm</h1> </center>
+Author: Jovan Sardinha  
+Email: jovan.sardinha@gmail.com  
+Date: Sunday, November 16, 2014  
+
+
+Comming soon!
+
+```{r}
+getwd()
+x <- source("../helpers/data_seperator.R")
+print(x$value)
+```
