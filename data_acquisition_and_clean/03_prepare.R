@@ -1,6 +1,6 @@
 # Goal here to come up wtih three sets per data source
 
-load("./cache/docs_unstemmed.Rdata")
+load("./cache/docs_stemmed.Rdata")
 
 
 blogs <- data.frame(docs[[1]]$content, stringsAsFactors = FALSE)
@@ -22,6 +22,7 @@ news$Type <- ""
 twitter$Type <- ""
 
 # Splitting Blogs
+set.seed(112)
 blogs$Type <- lapply(blogs$Type, FUN = data_seperator)
 news$Type <- lapply(news$Type, FUN = data_seperator)
 twitter$Type <- lapply(twitter$Type, FUN = data_seperator)
@@ -72,4 +73,19 @@ save(CV_news,file = "./cache/CV_news.RData")
 save(test_twitter,file = "./cache/test_twitter.RData")
 save(train_twitter,file = "./cache/train_twitter.RData")
 save(CV_twitter,file = "./cache/CV_twitter.RData")
+
+
+# Clearning space
+test_blogs <- NULL
+train_blogs <- NULL
+CV_blogs <- NULL
+
+test_news <- NULL
+train_news <- NULL
+CV_news <- NULL
+
+test_twitter <- NULL
+train_twitter <- NULL
+CV_twitter <- NULL
+
 

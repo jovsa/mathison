@@ -14,6 +14,7 @@ docs <- tm_map(docs, toSpace, "@[^\\s]+")
 docs <- tm_map(docs, toSpace, "/")
 docs <- tm_map(docs, toSpace, "@")
 docs <- tm_map(docs, toSpace, "\\|")
+docs <- tm_map(docs, toSpace, "[^a-zA-Z0-9]")
 
 
 # Converting the corpus to lower case

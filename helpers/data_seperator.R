@@ -1,8 +1,8 @@
 # Data splitter
 
-inTest <- 0.2
-inTrain <- 0.6
-inCV <- 0.2
+inTest <- 0.45
+inTrain <- 0.1
+inCV <- 0.45
 
 data_seperator <- function(x){
      val <- "NA"
