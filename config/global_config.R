@@ -16,3 +16,7 @@ library(tau)
 library(ngram)
 library(knitr)
 library(Matrix)
+library(RWeka)
+
+#source("http://bioconductor.org/biocLite.R")
+#biocLite("Rgraphviz")

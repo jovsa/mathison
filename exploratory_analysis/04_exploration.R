@@ -75,33 +75,6 @@ dtm2_docs <- NULL
 dtm3_docs <- NULL
 
 
-load("./cache/dtm1_docs.RData")
-load("./cache/dtm2_docs.RData")
-load("./cache/dtm3_docs.RData")
-gram1freq_docs <- data.frame(word = dtm1_docs$dimnames$Terms, freq = rowSums(sparseMatrix(i = dtm1_docs$i, j = dtm1_docs$j, x = dtm1_docs$v)))
-gram1freq_docs <- arrange(gram1freq_docs, desc(freq))
 
-data.frame(gram1 = gram1freq_docs$word[1:10])
-
-
-load("./cache/dtm1_blogs.RData")
-load("./cache/dtm2_blogs.RData")
-load("./cache/dtm3_blogs.RData")
-
-gram1freq_blogs <- data.frame(word = dtm1_blogs$dimnames$Terms, freq = rowSums(sparseMatrix(i = dtm1_blogs$i, j = dtm1_blogs$j, x = dtm1_blogs$v)))
-gram1freq_blogs <- arrange(gram1freq_blogs, desc(freq))
-
-gram2freq_blogs <- data.frame(word = dtm2_blogs$dimnames$Terms, freq = rowSums(sparseMatrix(i = dtm2_blogs$i, j = dtm2_blogs$j, x = dtm2_blogs$v)))
-gram2freq_blogs <- arrange(gram2freq_blogs, desc(freq))
-
-data.frame(gram1 = gram1freq_blogs$word[1:10], gram2 = gram2freq_blogs$word[1:10])
-
-
-
-temp <- DocumentTermMatrix(CTrain_blogs)
-freq <- colSums(as.matrix(temp))
-ord <- order(freq)
-length(freq)
-freq[tail(ord)]
 
 
