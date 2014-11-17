@@ -2,7 +2,7 @@
 
 ## Analysis of n-grams
 
-topx <- 10
+topx <- 15
 
 # Blogs
 load("./cache/dtm1_blogs.RData")
@@ -68,7 +68,7 @@ load("./cache/dtm3_docs.RData")
 
 freq1_docs <- colSums(as.matrix(dtm1_docs))
 ord1_docs <- order(freq1_docs)
-freq1_docs[tail(ord1_docs,10)]
+freq1_docs[tail(ord1_docs,15)]
 
 freq2_docs <- colSums(as.matrix(dtm2_docs))
 ord2_docs <- order(freq2_docs)

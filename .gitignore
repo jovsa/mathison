@@ -6,3 +6,4 @@ data/ru_RU/
 *.txt
 *.csv
 *.RData
+reports/MilestoneReport_cache/
