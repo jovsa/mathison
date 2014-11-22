@@ -1,10 +1,8 @@
-# Goal here to explore data and observe interesting trends from nGrams
-
 ## Analysis of n-grams
 
 #GRAPHS#
 
-#TOP 10
+#TOP 10 single grams
 topx <- 10
 freq1 <- data.frame(blogs = freq1_blogs[tail(ord1_blogs,topx)], news = freq1_news[tail(ord1_news,topx)], twitter = freq1_twitter[tail(ord1_twitter,topx)], all= freq1_docs[tail(ord1_docs,topx)] )
 freq1$Words <- row.names(freq1)
@@ -12,7 +10,6 @@ freq1$Words <- as.factor(freq1$Words)
 freq1$Words <- reorder(freq1$Words, freq1$all)
 freq1 <- melt(freq1, id = c("Words"))
 #freq1 <- freq1[order(freq1$variable,freq1$value),]
-
 
 png(filename="./images/wordCount.png", width = 1088, height = 562)
 g <- ggplot(freq1, aes(x = Words, y = order(value), fill = variable))
@@ -67,7 +64,7 @@ dev.off()
 
 
 
-
+# 3 gram
 freq3 <- data.frame(blogs = freq3_blogs[tail(ord3_blogs,topx)], news = freq3_news[tail(ord3_news,topx)], twitter = freq3_twitter[tail(ord3_twitter,topx)])
 freq3$Sum <- apply(freq3,1,sum)
 freq3$Words <- row.names(freq3)
