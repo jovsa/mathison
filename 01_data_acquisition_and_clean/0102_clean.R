@@ -1,3 +1,7 @@
+# Loading the data
+#load("./cache/docs.RData")
+
+
 #Preparing the corpus
 getTransformations()
 
@@ -14,7 +18,8 @@ docs <- tm_map(docs, toSpace, "@[^\\s]+")
 docs <- tm_map(docs, toSpace, "/")
 docs <- tm_map(docs, toSpace, "@")
 docs <- tm_map(docs, toSpace, "\\|")
-docs <- tm_map(docs, toSpace, "[^a-zA-Z0-9]")
+#docs <- tm_map(docs, toSpace, "[^a-zA-Z0-9]")
+#docs <- tm_map(docs, toSpace, "[^[:print:]]+")
 
 
 # Converting the corpus to lower case

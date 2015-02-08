@@ -1,6 +1,6 @@
 # Goal here to come up wtih three sets per data source
 
-load("./cache/docs_stemmed.Rdata")
+load("./cache/docs_unstemmed.Rdata")
 
 
 blogs <- data.frame(docs[[1]]$content, stringsAsFactors = FALSE)

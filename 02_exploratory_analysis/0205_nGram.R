@@ -68,7 +68,7 @@ load("./cache/dtm3_docs.RData")
 
 freq1_docs <- colSums(as.matrix(dtm1_docs))
 ord1_docs <- order(freq1_docs)
-freq1_docs[tail(ord1_docs,15)]
+freq1_docs[tail(ord1_docs,25)]
 
 freq2_docs <- colSums(as.matrix(dtm2_docs))
 ord2_docs <- order(freq2_docs)
@@ -77,3 +77,8 @@ freq2_docs[tail(ord2_docs,10)]
 freq3_docs <- colSums(as.matrix(dtm3_docs))
 ord3_docs <- order(freq3_docs)
 freq3_docs[tail(ord3_docs,10)]
+
+
+#inspect(dtm3_docs)[1:10,1:10]
+
+
