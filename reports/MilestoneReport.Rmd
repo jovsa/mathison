@@ -8,7 +8,7 @@ output:
 <center> <h1>Milestone Report: En Route to a Text Prediction Algorithm</h1> </center>
 Author: Jovan Sardinha  
 Email: jovan.sardinha@gmail.com  
-Date: Sunday, November 16, 2014  
+Date: Thursday, December 24, 2015  
 
 ```{r libraries, echo = FALSE, message=FALSE, warning=FALSE}
 library(xtable)
@@ -26,7 +26,7 @@ The goal of the overall project is to:
 
 The goal of this report is to:  
 1. Perform preliminary analysis that will help in understanding the data set.   
-3. Provide the next steps that will help devise the text prediction algorithm.    
+2. Provide the next steps that will help devise the text prediction algorithm.    
 
 
 # About the data
@@ -42,7 +42,7 @@ The pre-processing steps used clean that data include:
 5. Removing punctuation  
 6. Removing english stop words   
 7. Removing white spaces  
-8. Filtering profanity defined by [Banned Word List](http://www.bannedwordlist.com/) and [Front Gate Media](http://www.frontgatemedia.com/a-list-of-723-bad-words-to-blacklist-and-how-to-use-facebooks-moderation-tool/)
+8. Filtering profanity defined by [Banned Word List](http://www.bannedwordlist.com/) and [Front Gate Media](http://www.frontgatemedia.com/a-list-of-723-bad-words-to-blacklist-and-how-to-use-facebooks-moderation-tool/)  
 9. Stemming the data
 
 ## Splitting the data

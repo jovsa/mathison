@@ -1,0 +1,7 @@
+name: Publish Document
+account: rpubs
+server: rpubs.com
+bundleId:
+        https://api.rpubs.com/api/v1/document/136949/dfc219b7917a4ad2a5b3a0b09aef46f8
+url: http://rpubs.com/jsardinha/136949
+when: 1451180072.93304

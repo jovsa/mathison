@@ -1,9 +1,4 @@
-# Working directory initialization
-wd <- "./Documents/GitHub/Project_Mathison"
-setwd(wd)
 
-# Running file_paths.R
-source("./config/file_paths.R")
 
 library(rattle)
 library(tm)
@@ -18,10 +13,11 @@ library(RWeka)
 library(ggplot2)
 library(reshape)
 library(wordcloud)
+library(RSQLite)
+library(magrittr)
+library(stringr)
+library(slam)
 
 source("http://bioconductor.org/biocLite.R")
 #biocLite("Rgraphviz")
 
-
-# Cleaners
-wd <- NULL
