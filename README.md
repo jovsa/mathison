@@ -1,4 +1,4 @@
-#Project_Mathison
+#mathison
 
 This is a data science project in the NLP domain.
 
